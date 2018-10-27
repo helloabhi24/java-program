@@ -1,0 +1,23 @@
+public class Main
+{
+    void a(int c){
+        if(c%2==0)
+        {
+            System.out.println(c+" is even");
+            --c;
+            if(c>=0)
+            a(c);
+        }
+        else
+        {
+            --c;
+            if(c>=0)
+            a(c);
+                
+        }
+        }
+	public static void main(String[] args) {
+		Main d=new Main();
+		d.a(50);
+	}
+}
